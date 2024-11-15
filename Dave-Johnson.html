@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage Fright - Face the Darkness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #030303;
+            color: #d4d4d4;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-size: contain;
+            background-repeat: repeat;
+        }
+
+        header {
+            background-color: #151515;
+            color: #fff;
+            padding: 3rem 1rem;
+            text-align: center;
+            text-shadow: 2px 2px 5px red;
+            border-bottom: 3px solid #FF0000;
+            font-family: 'Nosifer', cursive;
+            letter-spacing: 4px;
+			background-image:url("images/spookyscaryskeltonsshiveringdownyourspine.jpg");
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0A0A0A; /* Black background */
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        nav a {
+            margin: 0 20px;
+            color: #FF0000; /* Red text */
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FFF; /* White on hover */
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 3rem 1rem;
+            margin: 1rem 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+            background-color: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+       
+
+        h1 {
+            color: #171616; /* dark grey text for the header */
+        }
+
+        h2 {
+            text-align: center;
+            color: #FF0000; /* Red text */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 2.5rem;
+            font-family: 'Nosifer', cursive;
+        }
+
+        h3, p {
+            text-align: center;
+        }
+        .bio {
+            color: #E0E0E0; /* Light gray text */
+            padding: 2rem;
+            background-color: #1C1C1C; /* Dark gray background */
+            border-radius: 10px;
+            margin: 2rem auto;
+            max-width: 700px;
+            text-align: left;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+
+        footer {
+            background-color: #0A0A0A; /* Black background */
+            color: #FF0000; /* Red text */
+            text-align: center;
+            padding: 1.5rem;
+            border-top: 3px solid #FF0000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Stage Fright - Face the Darkness</h1>
+    </header>
+
+    <nav>
+        <a href="BPA-1.html">Home</a>
+        <a href="BPA-1.html#members">Back to Members</a>
+    </nav>
+
+    <main class="content">
+        <h2>Vocalist</h2>
+        <div class="bio">
+            <h3>Dave “Growl” Johnson is the voice of Stage Fright, known for his guttural screams and growls that define the band’s sound. His powerful vocals bring an intense energy to every performance.</h3>
+            <h3>With years of experience and a dedication to pushing vocal limits, Dave’s voice remains a driving force behind the band’s identity.</h3>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Stage Fright Music</p>
+    </footer>
+</body>
+</html>
